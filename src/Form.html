@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Страница форм</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Форма заполения для участников</h1>
+    <br>
+    <h3>Общие данные</h3>
+    <form action="/ParticipantsList.php" method="post">
+        <label for="clientName">Имя</label>
+        <input type="text" id="clientName" name="clientName">
+        <br>
+        <br>
+        <label for="clientSurname">Фамилия</label>
+        <input type="text" id="clientSurname" name="clientSurname">
+        <br>
+        <br>
+        <label for="birthDate">Дата рождения</label>
+        <input type="date" id="birthDate" name="birthDate">
+        <br>
+        <br>
+        <label for="phone">Телефон</label>
+        <input type="number" id="phone" name="phone">
+        <br>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+    <br>
+    <h3>На каком транспорте вам было комфортно путешествовать по Горному алтаю?</h3>
+    <br>
+    <form action="/ParticipantsList.php" method="post">
+        <label>Уаз Патриот
+        <input type="checkbox" name="Уаз Патриот"></label>
+        <br>
+        <label>Уаз Буханка
+        <input type="checkbox" name="Уаз Буханка"></label>
+        <br>
+        <label>Газ 66
+        <input type="checkbox" name="Газ 66"></label>
+        <br>
+        <label>Toyota Land Cruiser 80
+        <input type="checkbox" name="Toyota Land Cruiser 80"></label>
+        <br>
+        <label>Toyota Land Cruiser Prado 120
+        <input type="checkbox" name="Toyota Land Cruiser Prado 120"></label>
+        <br>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+    <br>
+    <br>
+    <h3>Понравилось ли вам данное путешествие?</h3>
+    <br>
+    <form action="/ParticipantsList.php" method="post">
+        <label>Да
+        <input type="radio" name="Да"></label>
+        <br>
+        <label>Очень понравилось
+        <input type="radio" name="Да"></label>
+        <br>
+        <label>В полном восторге!
+        <input type="radio" name="Да"></label>
+        <br>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+    <br>
+    <br>
+    <h3>Какая на ваш взгляд самая оптимальная продолжительсность путешествия?</h3>
+    <br>
+    <form action="ParticipantsList.php" method="post">
+        <p><select size="1">
+            <option disabled>Количество дней</option>
+            <option value="2">2 дня</option>
+            <option value="4">4 дня</option>
+            <option value="6">6 дней</option>
+            <option value="8">8 дней</option>
+        </select></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <br>
+    <h3>Куда бы вы хотели отправиться в следующий раз?</h3>
+    <form action="ParticipantsList.php" method="post">
+        <p><select size="5" multiple name="futureJourney[]">
+            <option disabled>Выберите место</option>
+            <option value="Акташский ретранслятор">Акташский ретранслятор</option>
+            <option value="Гейзеровое озеро">Гейзеровое озеро</option>
+            <option value="Марс">Марс</option>
+            <option value="Актру">Актру</option>
+            <option value="Марс">Марс</option>
+            <option value="Плато Укок">Плато Укок</option>
+            <option value="Долина Елангаш">Долина Елангаш</option>
+            <option value="Джазатор">Джазатор</option>
+            <option value="Карагемский прорыв">Карагемский прорыв</option>
+        </select></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <br>
+    <br>
+    <form action="ParticipantsList.php" method="post">
+        <h3><b>Оставьте ваш отзыв</b></h3>
+        <p><textarea rows="20" cols="100" name="text"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <br>
+    <br>
+    <a href="./AltaiMountainsNature.html">Перейти на страницу "Красивейшие места Горного Алтая. Долина реки Чулышман"</a>
+</body>
