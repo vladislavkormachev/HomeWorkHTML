@@ -31,7 +31,7 @@
     <br>
     <h3>На каком транспорте вам было комфортно путешествовать по Горному алтаю?</h3>
     <br>
-    <form action="/ParticipantsList.php" method="post">
+    <form action="/Auto.php" method="post">
         <label>Уаз Патриот
         <input type="checkbox" name="Уаз Патриот"></label>
         <br>
@@ -54,15 +54,15 @@
     <br>
     <h3>Понравилось ли вам данное путешествие?</h3>
     <br>
-    <form action="/ParticipantsList.php" method="post">
+    <form action="/Like.php" method="post">
         <label>Да
-        <input type="radio" name="Да"></label>
+        <input type="radio" value="1" name="Да"></label>
         <br>
         <label>Очень понравилось
-        <input type="radio" name="Да"></label>
+        <input type="radio" value="2" name="Да"></label>
         <br>
         <label>В полном восторге!
-        <input type="radio" name="Да"></label>
+        <input type="radio" value="3" name="Да"></label>
         <br>
         <br>
         <button type="submit">Отправить</button>
@@ -71,8 +71,8 @@
     <br>
     <h3>Какая на ваш взгляд самая оптимальная продолжительсность путешествия?</h3>
     <br>
-    <form action="ParticipantsList.php" method="post">
-        <p><select size="1">
+    <form action="DaysNumber.php" method="post">
+        <p><select size="1" name="DaysNumber[]">
             <option disabled>Количество дней</option>
             <option value="2">2 дня</option>
             <option value="4">4 дня</option>
@@ -83,7 +83,7 @@
     </form>
     <br>
     <h3>Куда бы вы хотели отправиться в следующий раз?</h3>
-    <form action="ParticipantsList.php" method="post">
+    <form action="Alternatives.php" method="post">
         <p><select size="5" multiple name="futureJourney[]">
             <option disabled>Выберите место</option>
             <option value="Акташский ретранслятор">Акташский ретранслятор</option>
@@ -107,5 +107,5 @@
     </form>
     <br>
     <br>
-    <a href="./AltaiMountainsNature.html">Перейти на страницу "Красивейшие места Горного Алтая. Долина реки Чулышман"</a>
+    <a href="./index.html">Перейти на страницу "Красивейшие места Горного Алтая. Долина реки Чулышман"</a>
 </body>
